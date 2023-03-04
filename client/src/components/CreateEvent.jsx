@@ -1,8 +1,8 @@
-import { Box, Button, TextField } from '@mui/material';
 import React, { useState } from 'react';
 import QRCode from 'qrcode.react';
+import { Box, Button, TextField } from '@mui/material';
 
-function CreateEvent() {
+function CreateEvent(props) {
     return (
         <div>
             <br />
