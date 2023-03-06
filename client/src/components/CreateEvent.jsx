@@ -10,6 +10,7 @@ function CreateEvent(props) {
         event.preventDefault()
         console.log('Submitting event with the following details', props.title, props.date, props.address);
         createEvent(props.title, props.date, props.address)
+        props.setGetEvents(true)
     }
 
     return (
@@ -50,7 +51,7 @@ function CreateEvent(props) {
                 </div>
             </Box>
 
-            <Button type='submit' variant="contained">Create</Button>
+            <Button type='submit' variant="contained" color="success">Create</Button>
         </form>
     )
 

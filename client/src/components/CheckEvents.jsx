@@ -16,7 +16,7 @@ function CheckEvents(props) {
                         {console.log('Checking event venue', event.venue)}
                         <h3>{event.name}</h3>
                         <p>{event.venue}</p>
-                        <Button variant="contained">See event</Button>
+                        <Button variant="contained" color="success">See event</Button>
                     </li>
                     )
                 })}

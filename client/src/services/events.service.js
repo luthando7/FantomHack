@@ -18,7 +18,7 @@ export const getAllEvents = () => {
 export const createEvent = (title, date, address) => {
     console.log('the event details -> ', title, date, address);
     return fetch('http://localhost:3000/api/v1/events/create', {
-        method: 'Post',
+        method: 'post',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ title, date, address })
     })
